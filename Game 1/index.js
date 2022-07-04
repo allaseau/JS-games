@@ -17,11 +17,11 @@ function generateComputerChoice() {
     const randomNumber = Math.floor(Math.random() * possibleChoices.length)
 
     switch (randomNumber) {
-        case 1: computerChoice = 'pierre'
+        case 0: computerChoice = 'pierre'
         break;
-        case 2: computerChoice = 'papier'
+        case 1: computerChoice = 'papier'
         break;
-        case 3: computerChoice = 'ciseaux'
+        case 2: computerChoice = 'ciseaux'
         break;
     }
     computerChoiceDisplay.innerHTML = computerChoice
