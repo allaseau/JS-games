@@ -101,7 +101,7 @@ function moveBall() {
     checkCollision()
 }
 
-timerId = setInterval(moveBall, 30)
+timerId = setInterval(moveBall, 20)
 
 function checkCollision() {
     for (let i = 0; i < blocks.length; i++) {
@@ -115,7 +115,7 @@ function checkCollision() {
             changeDirection()
             score++
             scoreDisplay.innerHTML = score
-            if (blocks.length == 0) {
+            if (blocks.length === 0) {
                 scoreDisplay.innerHTML = 'You Win!'
                 clearInterval(timerId)
                 document.removeEventListener('keydown', moveUser)
